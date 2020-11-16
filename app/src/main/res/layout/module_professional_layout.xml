@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_preview_container">
+    <com.smewise.camera2.ui.GestureTextureView
+        android:id="@+id/texture_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/sb_focus_length"
+        android:layout_width="match_parent"
+        style="@style/SeekBarTheme"
+        android:layout_height="@dimen/seek_bar_height"
+        android:max="100"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:text="Sensitivity: " />
+
+    <EditText
+        android:id="@+id/et_sensitivity"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/textView"
+        android:ems="5"
+        android:maxLines="1"
+        android:inputType="number" />
+
+
+    <ImageButton
+        android:id="@+id/changeB"
+        android:layout_width="36dp"
+        android:layout_height="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_baseline_brightness_auto_40" />
+
+</RelativeLayout>

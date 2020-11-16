@@ -1,6 +1,18 @@
-# Internship_Camera (Company name: Robotrak)
-My Internship in Boshi Medical Co. An Android Camera App
-## Goal
-Building an Android mobile Camera, incorporating with an optical equipment, to detect eye illness.
-## Current stage and my contribution
-Finished basic camera functions such video shooting(idle), picture taking, professional picture taking(able to adjust more parameters), providing api for future developments
+# Camera2
+
+Camera App write with API 2
+
+1. Can open two camera at the same time (if you phone support, otherwise may cause camera error, such as can not open camera before restart your phone )
+
+2. Can get yuv format picture(if support, can be seen in Settings), if is yuv file, no thumbnail will generated, file save path: "/sdcard/DCIM/Camera2/"
+
+3. Some functions have not been developed and are still in development
+
+# ScreenShot
+
+<img width="400" src="./img/intro_1.png"></img>
+<img width="400" src="./img/intro_2.png"></img>
+<img width="400" src="./img/intro_3.png"></img>
+<img width="400" src="./img/intro_4.png"></img>
+
+
