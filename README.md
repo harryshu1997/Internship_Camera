@@ -24,10 +24,10 @@ Camera App write with API 2
 
 # ScreenShot
 
-<img width="400" src="./img/1.png"></img>
-<img width="400" src="./img/2.png"></img>
-<img width="400" src="./img/3.png"></img>
-<img width="400" src="./img/4.png"></img>
+<img width="400" src="./img/1.jpg"></img>
+<img width="400" src="./img/2.jpg"></img>
+<img width="400" src="./img/3.jpg"></img>
+<img width="400" src="./img/4.jpg"></img>
 
 ## Company
 Robotrak 南京博视医疗科技有限公司 
