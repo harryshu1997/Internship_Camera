@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CmodeActivity"
+    android:background="@android:color/white">
+
+
+    <TextView
+        android:id="@+id/Cdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="CMode Data to be saved"
+        android:textAllCaps="true"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        />
+
+    <ImageButton
+        android:id="@+id/c_goBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_keyboard_return_24"
+        android:layout_above="@+id/username"
+        />
+    <Button
+        android:id="@+id/c_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:layout_below="@+id/Cdata"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp"/>
+
+    <Button
+        android:id="@+id/c_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View"
+        android:layout_below="@+id/Cdata"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="230dp"/>
+</RelativeLayout>

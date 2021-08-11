@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/app_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1C6C6">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Name"
+        android:layout_marginTop="50dp"
+        />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Passwords"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/username"
+        />
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Retype Passwords"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/password"
+        />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/repassword"
+        android:layout_marginTop="50dp"
+        android:background="#D1C6C6"
+        android:text="Register" />
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SignIn"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/btnSignUp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_preview_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.smewise.camera2.ui.GestureTextureView
+        android:id="@+id/texture_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/sb_focus_length"
+        style="@style/SeekBarTheme"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/seek_bar_height"
+        android:max="1000"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="31dp"
+        android:text="ISO: "
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/v_sensitivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="31dp"
+        android:text="  "
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/sb_sensitivity"
+        style="@style/SeekBarTheme"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/textView"
+        android:max="3200"
+        android:progress="1500" />
+
+    <TextView
+        android:id="@+id/text_ExpTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="500dp"
+        android:text="ExpTime: "
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ExpTime_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="90dp"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="20dp"
+        android:inputType="number"
+
+        />
+
+    <!--    <TextView-->
+<!--        android:id="@+id/text_FrameDuration"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_marginTop="130dp"-->
+<!--        android:text="FrameDuration: "-->
+<!--        android:textColor="@color/colorPrimary"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/v_FrameDuration"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="108dp"-->
+<!--        android:layout_marginTop="140dp"-->
+<!--        android:ems="6"-->
+<!--        android:hint="max:31617425424"-->
+<!--        android:inputType="number"-->
+<!--        android:text="100000"-->
+<!--        android:textColor="@android:color/holo_red_light" />-->
+
+
+    <SeekBar
+        android:id="@+id/ExpTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:max="10000"
+        android:progress="5000"
+        android:progressTint="#4CAF50"
+        android:thumb="@drawable/ic_vector_recoding"
+        />
+
+    <TextView
+        android:id="@+id/zoom_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:text="1.0x"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textFontWeight="10"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/zoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="460dp"
+        android:max="800"
+        android:progress="0"
+        android:progressTint="#2196F3"
+        android:thumb="@mipmap/circle" />
+
+
+    <SeekBar
+        android:id="@+id/optic_zoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/zoom"
+        android:layout_marginBottom="40dp"
+        android:max="4755"
+        android:progress="0"
+        android:progressTint="#db5a6b"
+        android:thumb="@mipmap/circle" />
+
+    <ImageButton
+        android:id="@+id/none"
+        android:layout_width="36dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="85dp"
+        android:src="@drawable/ic_none" />
+
+    <ImageButton
+        android:id="@+id/auto"
+        android:layout_width="36dp"
+        android:layout_height="40dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="125dp"
+        android:src="@drawable/ic_baseline_brightness_auto_40" />
+
+
+
+
+</RelativeLayout>
